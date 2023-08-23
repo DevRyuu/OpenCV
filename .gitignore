@@ -7,8 +7,3 @@ result/
 *.jpg
 *.png
 *.tif
-*.zip
-
-# 발표자료
-*.ppt
-*.pptx
