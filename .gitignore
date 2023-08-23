@@ -1,0 +1,14 @@
+# 디렉토리
+__pycache__/
+image/
+result/
+
+# 확장자
+*.jpg
+*.png
+*.tif
+*.zip
+
+# 발표자료
+*.ppt
+*.pptx

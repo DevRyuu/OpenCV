@@ -25,7 +25,7 @@ def draw_polygon(event, x, y, flags, param):
             mask = np.zeros_like(img)
             cv.fillPoly(mask, [pts], (255, 255, 255))
             image_mask = cv.bitwise_and(img, mask)
-            cv.imshow("Masked Image", image_mask)          
+            cv.imshow("Masked Image", image_mask)
 
             cv.imwrite(os.path.join(output_path, f"{input_filename}_polygon.png"), image_polygon)
             cv.imwrite(os.path.join(output_path, f"{input_filename}_polygon_mask_{color_bw}.png"), image_mask)            
@@ -41,7 +41,7 @@ input_file = args.input
 color_bw = args.color
 
 input_filename, extension = input_file.split('.')
-output_path = "result"
+output_path = "image"
 
 # 색상 옵션
 if color_bw == "white":
